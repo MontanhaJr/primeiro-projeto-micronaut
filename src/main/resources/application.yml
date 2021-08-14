@@ -1,0 +1,22 @@
+micronaut:
+  application:
+    name: primeiroProjetoMicronaut
+
+#    datasources:
+#      default:
+#        url: jdbc:h2:mem:devDb;MVCC=TRUE;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE
+#        driverClassName: org.h2.Driver
+#        username: sa
+#        password: ''
+#        dialect: H2
+datasources:
+  default:
+    url: jdbc:mysql://localhost:3306/micronaut
+    driverClassName: com.mysql.cj.jdbc.Driver
+    username: root
+    password: ''
+    dialect: MYSQL
+jpa.default.properties.hibernate.hbm2ddl.auto: update
+jpa.default.properties.hibernate.hbm2ddl.show_sql: true
+
+viaCep: "https://viacep.com.br/ws/"
