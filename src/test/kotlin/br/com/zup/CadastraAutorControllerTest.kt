@@ -24,9 +24,9 @@ internal class CadastraAutorControllerTest {
 
     @BeforeEach
     internal fun setup() {
-        val enderecoResponse = EnderecoResponse("Major Júlio Ferreira", "Vila Lalau", "Jaraguá do Sul", "SC")
-        val endereco = Endereco(enderecoResponse, "623")
-        autor = Autor("mauricio", "mauriciojr@zup.com.br", "jUnit testes", endereco, "ABC5C12")
+//        val enderecoResponse = EnderecoResponse("Major Júlio Ferreira", "Vila Lalau", "Jaraguá do Sul", "SC")
+//        val endereco = Endereco(enderecoResponse, "623")
+        autor = Autor("mauricio", "mauriciojr@zup.com.br", "jUnit testes", null, "ABC5C12")
 
         autorRepository.save(autor)
     }

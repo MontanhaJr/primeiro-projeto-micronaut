@@ -46,11 +46,10 @@ dependencies {
     runtimeOnly("com.fasterxml.jackson.module:jackson-module-kotlin")
 
     // JPA
-    runtime("io.micronaut.sql:micronaut-jdbc-hikari")
+    implementation("io.micronaut.sql:micronaut-jdbc-hikari")
     implementation("io.micronaut.sql:micronaut-hibernate-jpa")
 
     implementation("mysql:mysql-connector-java:8.0.25")
-    implementation("com.h2database:h2")
 
 }
 

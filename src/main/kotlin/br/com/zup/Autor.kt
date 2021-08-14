@@ -14,7 +14,7 @@ data class Autor(
     @field:NotBlank val nome: String,
     @field:NotBlank @field:Email val email: String,
     @field:NotBlank @field:Size(max = 400) var descricao: String,
-    val endereco: Endereco,
+    val endereco: Endereco?,
     @field:NotBlank val placa: String?
 ) {
     @Id
